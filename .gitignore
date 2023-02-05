@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/androidstudio,android,c++,java
-# Edit at https://www.toptal.com/developers/gitignore?templates=androidstudio,android,c++,java
+# Created by https://www.toptal.com/developers/gitignore/api/android,androidstudio,c++,java,gradle,cmake
+# Edit at https://www.toptal.com/developers/gitignore?templates=android,androidstudio,c++,java,gradle,cmake
 
 ### Android ###
 # Gradle files
@@ -76,6 +76,23 @@ gen-external-apklibs
 *.out
 *.app
 
+### CMake ###
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+### CMake Patch ###
+# External projects
+*-prefix/
+
 ### Java ###
 # Compiled class file
 *.class
@@ -101,6 +118,32 @@ gen-external-apklibs
 hs_err_pid*
 replay_pid*
 
+### Gradle ###
+.gradle
+**/build/
+!src/**/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Avoid ignore Gradle wrappper properties
+!gradle-wrapper.properties
+
+# Cache of project
+.gradletasknamecache
+
+# Eclipse Gradle plugin generated files
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+### Gradle Patch ###
+# Java heap dump
+
 ### AndroidStudio ###
 # Covers files to be ignored for android development using Android Studio.
 
@@ -119,7 +162,6 @@ gen/
 out/
 
 # Gradle files
-.gradle
 
 # Signing files
 .signing/
@@ -186,8 +228,6 @@ obj/
 .idea/navEditor.xml
 
 # Legacy Eclipse project files
-.classpath
-.project
 .cproject
 .settings/
 
@@ -218,4 +258,4 @@ fabric.properties
 
 !/gradle/wrapper/gradle-wrapper.jar
 
-# End of https://www.toptal.com/developers/gitignore/api/androidstudio,android,c++,java
+# End of https://www.toptal.com/developers/gitignore/api/android,androidstudio,c++,java,gradle,cmake
